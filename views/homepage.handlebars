@@ -1,0 +1,10 @@
+{{#each posts as |posts|}}
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{posts.title}}</h5>
+    <p class="card-text">{{posts.content}}</p>
+     <p>This post was created by {{posts.user.name}} on {{format_date posts.date_created}}</p>
+    <a href="/post/{{id}}" class="btn btn-primary">COMMENT</a>
+  </div>
+</div>
+{{/each}}
